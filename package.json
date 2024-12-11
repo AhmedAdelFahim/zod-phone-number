@@ -1,6 +1,6 @@
 {
     "name": "zod-phone-number",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Zod Phone Number is validation schema for Zod",
     "main": "build/index.js",
     "files": [
