@@ -7,6 +7,12 @@ Zod Phone Number is validation schema for [Zod](https://www.npmjs.com/package/zo
 [![NPM Downloads](https://img.shields.io/npm/dt/zod-phone-number.svg?style=for-the-badge)](https://www.npmjs.com/package/zod-phone-number)
 [![NPM Downloads](https://img.shields.io/npm/dm/zod-phone-number.svg?style=for-the-badge)](https://www.npmjs.com/package/zod-phone-number)
 
+## Features
+* Seamlessly integrates with Zod's validation framework.
+* Supports multiple phone number formats, including National, International, RFC3966, and E.164.
+* Provides detailed phone number metadata, such as country code and formatted numbers.
+* Easy-to-use API for handling phone number validation in your applications.
+
 ## Installation
 
 ```bash
@@ -45,7 +51,7 @@ const { data } = ZodPhoneNumber.phoneNumber({
 
 
 const { data } = ZodPhoneNumber.phoneNumber({
-  returningFormat: RETURNING_FORMAT.VALUE__WITH_EXTRA_INFO,
+  returningFormat: RETURNING_FORMAT.VALUE_WITH_EXTRA_INFO,
 }).safeParse('+2010 605 944 88');
 /*
 output: {
