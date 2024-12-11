@@ -16,6 +16,8 @@ $ npm i zod-phone-number
 ## Usage
 
 ```javascript
+const { ZodPhoneNumber, RETURNING_FORMAT } = require('zod-phone-number');
+
 const { data } = ZodPhoneNumber.phoneNumber({
   returningFormat: RETURNING_FORMAT.NATIONAL,
 }).safeParse('+2010 605 944 77'); // 010 60594488
